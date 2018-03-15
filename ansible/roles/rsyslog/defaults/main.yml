@@ -1,0 +1,3 @@
+---
+# defaults file for rsyslog
+central_log_listener: False

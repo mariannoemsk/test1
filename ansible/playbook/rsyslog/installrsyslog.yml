@@ -1,0 +1,6 @@
+- name: install rsyslog
+  hosts: localhost
+  become: yes
+  roles:
+    - role: /etc/ansible/roles/rsyslog
+

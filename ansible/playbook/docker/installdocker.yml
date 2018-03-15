@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  become: yes
+
+  tasks:
+    - name: install docker
+      yum:
+         name: docker
+         state: present
+      retries: 5
+      delay: 10

@@ -1,0 +1,12 @@
+- hosts: localhost
+  become: yes
+
+  tasks: syslog output
+    - name: syslog output
+      docker_container:
+          name: service
+          image: [$docker_image]
+          log_driver: syslog
+          log_options:
+             syslog-address: tcp://localhost:514
+             syslog-facility: daemon   

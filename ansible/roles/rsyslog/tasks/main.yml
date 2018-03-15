@@ -1,0 +1,9 @@
+---
+- name: install rsyslog
+  yum:
+   name: rsyslog
+   state: installed
+
+- name: create location on remote server
+  file: path={{ central_logs_directory }} owner=root group=root mode=0755
+  when: central_log_listener     

@@ -1,0 +1,4 @@
+---
+# vars file for rsyslog
+syslog_conf_path: "/etc/rsyslog.d"
+central_conf_file: "central_syslog.conf"
